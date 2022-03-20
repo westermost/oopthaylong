@@ -1,19 +1,11 @@
-// Sử dụng bài 1, tiếp tục xây dựng lớp DSHOCSINH (danh sách học sinh) gồm các thuộc tính: 
-// • Mảng các đối tượng học sinh 
-// • Số lượng học sinh 
-// Và phương thức: 
-// • Nhập danh sách 
-// • In danh sách 
-// • Sắp xếp danh sách giảm dần theo điểm trung bình của học sinh 
-// Viết lớp bai2 chứa phương thức main(): 
-// • Tạo một đối tượng danh sách học sinh 
-// • Nhập thông tin cho danh sách học sinh 
-// • In danh sách học sinh đã được sắp thứ tự. 
-
 class HocSinh {
     private int maSo;
     private String hoTen;
     private float diemTrungBinh;
+
+    public float getDiemTrungBinh() {
+        return diemTrungBinh;
+    }
 
     public void input() {
         System.out.println("Nhap ma so: ");
@@ -67,19 +59,32 @@ class DSHocSinh {
 
     public void xuatDs() {
         System.out.println("Danh sach hoc sinh: ");
+        System.out.println("----------------------------------");
         for (int i = 0; i < this.ds.length; i++) {
             this.ds[i].output();
         }
     }
 
-    // Sắp xếp tự viết
+    // Sap xep danh sach theo dtb
+    public void sapxep() {
+        HocSinh temp = this.ds[0];
+
+        for (int i = 0; i < this.ds.length; i++)
+            for (int j = i + 1; j < this.ds.length; j++)
+                if (this.ds[i].getDiemTrungBinh() < this.ds[j].getDiemTrungBinh()) {
+                    temp = this.ds[i];
+                    this.ds[i] = this.ds[j];
+                    this.ds[j] = temp;
+                }
+
+    }
 }
 
 public class bai2 {
     public static void main(String[] args) {
         DSHocSinh ds = new DSHocSinh();
         ds.nhapDs();
+        ds.sapxep();
         ds.xuatDs();
-        // Sắp xếp tự viết
     }
 }
