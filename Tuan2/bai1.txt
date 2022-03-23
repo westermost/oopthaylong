@@ -1,0 +1,31 @@
+Bài 1: Tạo lớp phân số bao gồm: 
++ Thành phần dữ liệu: 
+    – Tử số 
+    – Mẫu số 
++ Phương thức: 
+    – Phương thức khởi tạo chuẩn, mặc định tử bằng 0 và mẫu bằng 1
+    – Phương thức khởi tạo phân số khi biết tử và mẫu, tham số truyền vào là hai giá trị
+    tương ứng cho tử và mẫu.
+    – Phương thức khởi tạo phân số từ một phân số đã có, tham số truyền vào là một phân 
+    số
+    – Nhập phân số 
+    – Xuất phân số 
+    – Tìm ước số chung lớn nhất của tử và mẫu
+        Thuật toán tìm ucln của 2 số nguyên a và b
+            Chừng nào a≠b thì thực hiện:
+            Nếu a>b thì a=a-b
+            Ngược lại thì b=b-a
+            UCLN =a
+    – Rút gọn phân số 
+    – Cộng 2 phân số 
+        Viết phương thức cộng hai phân số: Cộng phân số của lớp đang xét với phân số p là tham 
+        số truyền vào. Kết quả trả về phân số tổng tìm được.
+            o Bước 1: tìm mẫu số chung, mẫu số của phân số kết quả bằng mẫu số chung
+            o Bước 2: tìm tử số của phân số kết quả bằng cách cộng tử của 2 phân số sau khi 
+            quy đồng
+            o Bước 3: rút gọn phân số kết quả và trả về
+    – Trừ 2 phân số
+    – Nhân 2 phân số 
+    – Chia 2 phân số
+    Tạo lớp DEMO chứa phương thức main, tạo đối tượng và thực thi các chức năng của lớp phân 
+    số.

@@ -1,0 +1,12 @@
+Mục tiêu
+1. Nắm vững cấu trúc của một lớp: 
+    - Thuộc tính (property)
+    - Hành vi (behavior, method)
+2. Phạm vi truy xuất thành phần của lớp trong cùng 1 gói
+    - Public: dùng chung tại mọi vị trí
+    - Private: chỉ được truy xuất trong phạm vi lớp đó
+3. Cách viết và gọi thực hiện các loại phương thức khởi tạo (Constructor)
+    a. PTKT không tham số
+    b. PTKT có tham số
+    c. PTKT có tham số, dạng sao chép
+4. Tạo đối tượng, truyền thông điệp cho đối tượng (gọi thực thi một phương thức
