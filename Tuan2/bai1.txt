@@ -4,6 +4,8 @@ Bài 1: Tạo lớp phân số bao gồm:
     – Mẫu số 
 + Phương thức: 
     – Phương thức khởi tạo chuẩn, mặc định tử bằng 0 và mẫu bằng 1
+    Nhi's question: Why can't we just directly assign value for the instance variable? (Ex: private int num = 0;)
+
     – Phương thức khởi tạo phân số khi biết tử và mẫu, tham số truyền vào là hai giá trị
     tương ứng cho tử và mẫu.
     – Phương thức khởi tạo phân số từ một phân số đã có, tham số truyền vào là một phân 
