@@ -19,6 +19,7 @@ public class Fraction {
         this.denom = other.denom;
     }
 
+    // TODO Không xài tới thì viết làm gì
     public int getNum() {
         return num;
     }
@@ -35,16 +36,27 @@ public class Fraction {
         this.denom = denom;
     }
 
+    // TODO Không chạy được.
+    //    java.lang.NullPointerException
+    //    at oopthaylong.Tuan2.Nhi.Fraction.inputFraction(Fraction.java:46)
+    //    at oopthaylong.Tuan2.Nhi.Demo.main(Demo.java:7)
     public void inputFraction() {
-        System.out.println("Input numerator:");
-        this.num = Integer.parseInt(System.console().readLine());
-        System.out.println("Input denominator:");
-        this.denom = Integer.parseInt(System.console().readLine());
+        try {
+            System.out.println("Input numerator:");
+            this.num = Integer.parseInt(System.console().readLine());
+            System.out.println("Input denominator:");
+            this.denom = Integer.parseInt(System.console().readLine());
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public String outputFraction() {
         return this.num + "/" + this.denom;
     }
+
+    // TODO fuction tìm Ước chung lớn nhất đâu?
 
     //GDC = greatest common divisor
     public int findGDC() {
@@ -60,6 +72,7 @@ public class Fraction {
     }
 
     public String reduceFraction() {
+        // TODO sau kh6ng gán giá trị khi khởi tạo luôn?
         int d;
         d = findGDC();
         this.num /= d;
@@ -75,6 +88,7 @@ public class Fraction {
         return result.outputFraction();
     }
 
+    // TODO quy tắc đặt tên?
     public String subfraction(Fraction other) {
         Fraction result = new Fraction();
         result.num = this.num * other.denom - this.denom * other.num;

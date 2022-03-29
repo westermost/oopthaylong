@@ -1,3 +1,5 @@
+package oopthaylong.Tuan1.bai_giai;
+
 class HocSinh {
     private int maSo;
     private String hoTen;
@@ -80,11 +82,3 @@ class DSHocSinh {
     }
 }
 
-public class bai2 {
-    public static void main(String[] args) {
-        DSHocSinh ds = new DSHocSinh();
-        ds.nhapDs();
-        ds.sapxep();
-        ds.xuatDs();
-    }
-}
